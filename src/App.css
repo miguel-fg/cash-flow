@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+
+/******** Nav bar styles ********/
+
+.nav-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: lightgray;
+}
+.nav-link {
+  margin-right: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/******** Main page styles ********/
+
+.main-container{
+  padding-top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.super-title {
+  font-size: 4em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.under-title {
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-bottom: 15%;
+}
+
+.call-to-act{
+  width: 40%;
+}
+
+.picture-placeholder {
+  border-radius: 5%;
+  background-color: red;
+}
+
+/******** About page styles ********/
+
+.banner-div {
+  height: 200px;
+}
+
+.main-stack-container {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.not-home {
+  padding-bottom: 5%;
+}
+
+.cluster-icon{
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  
+  margin-top: 5%;
+}
+
+.info-stack {
+  margin-top: 10%;
+  background-color: lightgray;
+  padding-bottom: 5%;
+  border-radius: 5%;
+}
+
+.info-cluster-sentence{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom {
+  padding-bottom: 10%;
+}
+
+/******** Pricing page styles ********/
+
+.plans{
+  margin-top: 0%;
+}
+
+.info-cluster-center {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
