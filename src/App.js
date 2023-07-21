@@ -1,8 +1,10 @@
 import "./App.css";
+import "./Dashboard.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Pricing from "./pages/pricing";
+import Dashboard from "./pages/dashboard";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="pricing" element={<Pricing />} />
+              <Route path="dashboard" element={<Dashboard />} />
             </Routes>
         </BrowserRouter>
     );

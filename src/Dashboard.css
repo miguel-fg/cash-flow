@@ -1,0 +1,19 @@
+.dashboard-container{
+    background-color: aquamarine;
+    height: 95%;
+    position: absolute;
+}
+
+.dashboard-stack{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transaction-container{
+    width: 30%;
+    height: 100%;
+    background-color: azure;
+    max-height: 90%;
+    min-height: 90%;
+}
