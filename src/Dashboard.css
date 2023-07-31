@@ -1,19 +1,77 @@
-.dashboard-container{
-    background-color: aquamarine;
-    height: 95%;
-    position: absolute;
-}
-
 .dashboard-stack{
-    width: 90%;
+    width: 91%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .transaction-container{
     width: 30%;
-    height: 100%;
-    background-color: azure;
-    max-height: 90%;
-    min-height: 90%;
+    height: 90vh;
+    background-color: transparent;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.dashboard-card{
+    height: 43vh;
+    background-color: transparent;
+}
+
+.pie-chart{
+    width: 63vh;
+    margin-right: 1vh;
+}
+
+.goals{
+    width: 63vh;
+}
+
+.main-chart{
+    height: 46vh;
+    background-color: transparent;
+    margin-bottom: 1vh;
+}
+
+.dashboard-card-title{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.transaction-card{
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    background-color: white;
+}
+
+.transaction-title{
+    font-size: larger;
+    font-weight: 500;
+}
+
+.transaction-date{
+    font-weight:100;
+    font-size: large;
+    color: gray;
+}
+
+.transaction-amount{
+    font-weight: 500;
+}
+
+.delete-transaction-button{
+    margin-left: 2vh;
+}
+
+.typeRed{
+    color: red;
+}
+
+.typeGreen{
+    color: green;
+}
+
+.main-chart-responsive-container{
+    height: 90%;
 }

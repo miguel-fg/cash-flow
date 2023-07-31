@@ -31,13 +31,18 @@ const get_single_transaction = asyncHandler(async (req, res, next) => {
 const create_transaction = asyncHandler(async (req, res, next) => {
     const { title, type, amount, category } = req.body;
 
-    const transaction = await Transaction.create({
+    await Transaction.create({
         title,
         type,
         amount,
         category,
     });
-    res.status(200).json(transaction);
+
+    const transactions = await Transaction.find()
+        .sort({ createdAt: -1 })
+        .exec();
+
+    res.status(200).json(transactions);
 });
 
 // DELETE a transaction
