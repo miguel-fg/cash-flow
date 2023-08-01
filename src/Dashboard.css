@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Sen&family=Space+Grotesk&display=swap');
+
 .dashboard-stack{
     width: 91%;
     margin-left: auto;
@@ -10,6 +12,13 @@
     background-color: transparent;
     padding: 10px;
     overflow-y: scroll;
+    background-color: #f7e5e9;
+
+    scrollbar-width: none;
+}
+
+.transaction-container::-webkit-scrollbar {
+    display: none;
 }
 
 .dashboard-card{
@@ -35,25 +44,29 @@
 .dashboard-card-title{
     text-align: center;
     font-size: xx-large;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #19193b;
 }
 
 .transaction-card{
     margin-top: 20px;
     border: 1px solid #dee2e6;
-    background-color: white;
+    background-color: #fefefe;
 }
 
 .transaction-title{
     font-size: larger;
     font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .transaction-date{
     font-weight:100;
     font-size: large;
-    color: gray;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #a5a5c5;
 }
 
 .transaction-amount{
@@ -65,13 +78,33 @@
 }
 
 .typeRed{
-    color: red;
+    color: #fe616f;
 }
 
 .typeGreen{
-    color: green;
+    color: #5e81f4;
 }
 
 .main-chart-responsive-container{
     height: 90%;
+}
+
+.accordion-title-text{
+    color: #19193b;
+    font-size: large;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.form-text {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.form-label{
+    font-size: large;
+    color: #19193b;
+}
+
+.add-button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: large;
 }

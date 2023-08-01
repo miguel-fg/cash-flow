@@ -5,7 +5,6 @@ import {
     CartesianGrid,
     Line,
     ResponsiveContainer,
-    Tooltip,
 } from "recharts";
 
 export default function SpendingChart(props) {
@@ -17,7 +16,7 @@ export default function SpendingChart(props) {
         let spending = 0;
 
         const transactionEntries = Object.entries(transactions).reverse();
-
+        // eslint-disable-next-line
         for (const [transactionKey, transaction] of transactionEntries) {
             if (transaction.type === "Expense") {
                 const value = transaction.amount
@@ -36,7 +35,7 @@ export default function SpendingChart(props) {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="date" angle={-45} textAnchor="end" />
                 <YAxis />
-                <Line type="monotone" dataKey="amount" stroke="#000000" />
+                <Line type="monotone" dataKey="amount" stroke="#fe616f" strokeWidth={3}/>
             </LineChart>
         </ResponsiveContainer>
     );

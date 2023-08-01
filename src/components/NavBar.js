@@ -20,21 +20,18 @@ export default function NavBar() {
         <Navbar expand="lg" variant="light">
             <Container fluid className="nav-container rounded">
                 <LinkContainer to="/" className="nav-title-link">
-                    <Navbar.Brand>Cash Flow</Navbar.Brand>
+                    <Navbar.Brand><span className="navbar-text cash-flow">Cash Flow</span></Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Nav className="justify-content-end flex-grow-1 pe-2">
                         <LinkContainer to="/about" className="nav-link">
-                            <Nav.Link>About</Nav.Link>
-                        </LinkContainer>
-                        <LinkContainer to="/pricing" className="nav-link">
-                            <Nav.Link>Pricing</Nav.Link>
+                            <Nav.Link><span className="navbar-text">Documentation</span></Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/dashboard" className="nav-link">
-                            <Nav.Link>Dashboard</Nav.Link>
+                            <Nav.Link><span className="navbar-text">Dashboard</span></Nav.Link>
                         </LinkContainer>
-                        <Button onClick={handleShow}>Login</Button>
+                        <Button onClick={handleShow} className="navbar-text login-button">Login</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

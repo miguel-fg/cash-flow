@@ -1,3 +1,4 @@
+// recharts components
 import {
     LineChart,
     CartesianGrid,
@@ -37,7 +38,7 @@ export default function MainChart(props) {
             <XAxis dataKey="date" angle={-45} textAnchor="end"/>
             <YAxis />
             <Tooltip />
-            <Line type="monotone" dataKey="amount" stroke="#000000" />
+            <Line type="monotone" dataKey="amount" stroke="#4d4cac" strokeWidth={3}/>
         </LineChart>
         </ResponsiveContainer>
     );

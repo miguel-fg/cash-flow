@@ -1,4 +1,4 @@
-import { RadarChart, ResponsiveContainer, PolarGrid, PolarAngleAxis, PolarRadiusAxis,Radar } from "recharts";
+import { RadarChart, ResponsiveContainer, PolarGrid, PolarAngleAxis,Radar } from "recharts";
 
 export default function CategoryChart(props){
     //building the data for the graph
@@ -27,8 +27,7 @@ export default function CategoryChart(props){
             <RadarChart data={objData}>
             <PolarGrid />
             <PolarAngleAxis dataKey="category" />
-            <PolarRadiusAxis angle={30} domain={[0, 10]} />
-            <Radar name="Category" dataKey="amount"  stroke="#000000" fill="#000000" fillOpacity={0.3}/>
+            <Radar name="Category" dataKey="amount"  stroke="#4d4cac" strokeWidth={1} fill="#5e81f4" fillOpacity={0.5}/>
             </RadarChart>
         </ResponsiveContainer>
     );
